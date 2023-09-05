@@ -104,3 +104,18 @@ Si vous modifiez ces ports, assurez-vous également de mettre à jour les réfé
     ```bash
     kubectl apply -f k8s/
     ```
+
+## TP Stagiaire
+
+1. Commandes de build du projet
+
+    cd client && npm install
+    cd ../posts && npm install
+    cd ../comments && npm install
+    cd ../event-bus && npm install
+    cd ../moderation && npm install
+    cd ../posts && npm install
+    cd ../query && npm install
+
+  a. Lancement du client en local pour test 
+      **-cd client && npm start**
