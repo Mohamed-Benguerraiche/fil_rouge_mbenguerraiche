@@ -1,0 +1,24 @@
+services_data:
+  - name: client-srv
+    port: 3000
+    directory: client
+
+  - name: posts-clusterip-srv
+    port: 4000
+    directory: posts
+
+  - name: query-srv
+    port: 4002
+    directory: query
+
+  - name: comments-srv
+    port: 4001
+    directory: comments
+
+  - name: moderation-srv
+    port: 4003
+    directory: moderation
+
+  - name: event-bus-srv
+    port: 4005
+    directory: event-bus

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-srv-deployment
+spec:
+  replicas: 3  # Nombre de répliques souhaitées
+  selector:
+    matchLabels:
+      app: client-srv
+  template:
+    metadata:
+      labels:
+        app: client-srv
+    spec:
+      containers:
+        - name: client-srv
+          image: client  # Image Docker du service client
+          ports:
+            - containerPort: 3000

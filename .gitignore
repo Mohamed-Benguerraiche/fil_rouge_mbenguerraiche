@@ -1,3 +1,17 @@
-dockerfile
-dockerfile
-infra
+# Dossiers à exclure
+node_modules/
+build/
+dist/
+
+# Fichiers à exclure
+.env
+.DS_Store
+*.log
+
+# Fichiers Python
+*.pyc
+__pycache__/
+*.py
+
+# Fichiers .template
+*.template
